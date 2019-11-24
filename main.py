@@ -75,7 +75,7 @@ while mainScreen == False:
                 mainScreen = True
 
 
-    intro = pygame.image.load("heel.jpg").convert()
+    intro = pygame.image.load("/pictures/heel.jpg").convert()
     intro = pygame.transform.scale(intro, (40, 40))
     windowDisplay.fill(white)
     windowDisplay.blit(intro, (width//2.1,height//2.4))
@@ -117,7 +117,7 @@ while prologue == False:
             elif event.key == pygame.K_n:
                 angry = True
     if angry == False:
-        intro = pygame.image.load("face.png").convert()
+        intro = pygame.image.load("/pictures/face.png").convert()
         intro = pygame.transform.scale(intro, (width//2, height))
         windowDisplay.fill(black)
         windowDisplay.blit(intro, (width//4.5,0))
@@ -131,7 +131,7 @@ while prologue == False:
 
         
     else:
-        intro = pygame.image.load("angry.png").convert()
+        intro = pygame.image.load("/pictures/angry.png").convert()
         intro = pygame.transform.scale(intro, (width//2, height))
         windowDisplay.fill(black)
         windowDisplay.blit(intro, (width//4.5,0))
