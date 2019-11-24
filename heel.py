@@ -34,7 +34,7 @@ class Hammer(pygame.sprite.Sprite):
         self.speed1 = 5 # Ascending and Descending Speed
         self.speed2 = 3 # Left and Right Speed
         
-        image = pygame.image.load("hammer.png")
+        image = pygame.image.load("/pictures/hammer.png")
         image = pygame.transform.scale(image, (100, 100))
         image = pygame.transform.rotate(image, -45)
         self.image = image
@@ -87,7 +87,7 @@ class Heel1(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         
-        image = pygame.image.load("feet1.png")
+        image = pygame.image.load("/pictures/feet1.png")
         image = pygame.transform.scale(image, (1000, 1000))
         self.image = image
         self.rect = self.image.get_rect()
@@ -97,7 +97,7 @@ class Block(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         
-        image = pygame.image.load("tempHeel.png")
+        image = pygame.image.load("/pictures/tempHeel.png")
         image = pygame.transform.scale(image, (50, 50))
         self.image = image
         self.rect = self.image.get_rect()
